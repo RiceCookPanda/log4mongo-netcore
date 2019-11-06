@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <PackageId>log4mongo-netcore</PackageId>
+    <PackageTags>log logging log4net debug diagnostic trace db database nosql mongo mongodb appender log4net apache</PackageTags>
+    <Description>MongoDB appender for log4net</Description>
+    <PackageLicenseUrl>https://raw.github.com/log4mongo/log4mongo-net/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/log4mongo/log4mongo-net</PackageProjectUrl>
+    <Authors>Gian Marco Gherardi</Authors>
+    <Version>3.2.0</Version>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="log4net" Version="2.0.8" />
+    <PackageReference Include="MongoDB.Bson" Version="2.9.2" />
+    <PackageReference Include="MongoDB.Driver" Version="2.9.2" />
+    <PackageReference Include="MongoDB.Driver.Core" Version="2.9.2" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.6.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Configuration" />
+  </ItemGroup>
+
+</Project>
